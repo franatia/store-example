@@ -1,0 +1,100 @@
+.ProductSliderItem{
+    margin: 15px 5px 15px 5px;
+}
+.ProductSliderItem-container{
+    width: calc(100%);
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius-standard);
+    box-shadow: 0px 0px 4px var(--box-shadow-color);
+}
+
+.ProductSliderItem-data-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ProductSliderItem .options-expanded{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.ProductSliderItem .options-expanded .ProductSliderItem-image{
+    border-bottom-left-radius: 0px;
+}
+
+.ProductSliderItem-image-container{
+    width: 125px;
+    height: 125px;
+}
+
+.ProductSliderItem-image{
+    object-fit: cover;
+    width: 125px;
+    height: 125px;
+    border-top-left-radius: var(--border-radius-standard);
+    border-bottom-left-radius: var(--border-radius-standard);
+}
+
+.ProductSliderItem-info-container{
+    height: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 8px;
+}
+
+.ProductSliderItem-info-container .ProductSliderItem-title{
+    margin: 0px;
+    font-size: var(--ultra-small-font-size);
+}
+.ProductSliderItem-info-container .ProductSliderItem-price-container{
+    margin: 7px 0 7px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ProductSliderItem-price-container .ProductSliderItem-price{
+    font-size: var(--small-font-size);
+}
+.ProductSliderItem-price-container .ProductSliderItem-off{
+    font-size:var(--ultra-small-font-size);
+    color: var(--dark-green-color);
+    margin: 5px;
+}
+
+.ProductSliderItem-quantity-container{
+    height: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.ProductSliderItem-quantity-type{
+    font-size: var(--ultra-small-font-size);
+    text-align: center;
+}
+
+.ProductSliderItem-button-add-cart{
+    background-color: var(--dark-green-color);
+    color: white;
+    border: none;
+    font-size: var(--ultra-small-font-size);
+    font-family: var(--primary-font);
+    border-radius: var(--border-radius-standard);
+    padding: 5px 8px 5px 8px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.ProductSliderItem-button-add-cart:hover{
+    filter: contrast(85%);
+}

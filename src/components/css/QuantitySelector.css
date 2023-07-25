@@ -1,0 +1,37 @@
+.QuantitySelector{
+    width: calc(100% - 10px);
+    margin: 10px 5px 10px 5px;
+}
+
+.QuantitySelector-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.QuantitySelector-input{
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: var(--primary-font);
+    font-size: var(--ultra-small-font-size);
+    color: var(--primary-text-color);
+}
+
+.QuantitySelector-button{
+    font-family: var(--primary-font);
+    font-size: var(--ultra-small-font-size);
+    color: var(--primary-text-color);
+    border: none;
+    background-color: var(--hover-color-3);
+    transition: background-color .2s;
+    cursor: pointer;
+    border-radius: var(--border-radius-small);
+}
+
+.QuantitySelector-button:hover{
+    background-color: var(--hover-color-1);
+}
