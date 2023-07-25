@@ -58,7 +58,9 @@ export default function ProductSlider({title, items=[
     return(
         <div className="ProductSlider">
             <div className="ProductSlider-container">
-                <div className="ProductSlider-title-container">
+                <div className="ProductSlider-title-container" onClick={() => {
+                    setExpanded(!expanded);
+                }}>
                     <h4 className="ProductSlider-title">{title}</h4>
                     <span class={`material-symbols-outlined ${(expanded) ? "rotate" : ""}`} onClick={() => {
                         setExpanded(!expanded);
